@@ -49,5 +49,12 @@ int square() {
 }
 
 int binary() {
+    int binary[50] = { 0, };
+    int position = 0;
+    int x;
+
+    printf("\n진법을 변환할 수를 입력해주세요.\n");
+    printf("입력 : ");
+    scanf(" %d", &x);
 
 }
