@@ -7,6 +7,7 @@ int main()
 
     printf("==========계산기============");
 
+
 }
 
 int basic() {
@@ -34,5 +35,9 @@ int basic() {
         result = num1 / num2;
         printf("\n%d ÷ %d = %.2f\n", num1, num2, (double)result);
     }
+
+}
+
+int square() {
 
 }
