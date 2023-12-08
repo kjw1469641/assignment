@@ -52,11 +52,13 @@ int binary() {
     int binary[50] = { 0, };
     int position = 0;
     int x;
-    int num;
+    
 
     printf("\n진법을 변환할 수를 입력해주세요.\n");
     printf("입력 : ");
     scanf_s(" %d", &x);
+
+    int num = x;
 
     while (1)
     {
@@ -73,4 +75,6 @@ int binary() {
     {
         printf("%d", binary[i]);
     }
+
+    printf("\n%d를 2진수로 표현하면 %d입니다.\n", x, binary);
 }
