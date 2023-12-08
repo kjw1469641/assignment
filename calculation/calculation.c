@@ -47,3 +47,7 @@ int square() {
 
     printf("입력한 숫자의 제곱은 %d 입니다.", x);
 }
+
+int binary() {
+
+}
