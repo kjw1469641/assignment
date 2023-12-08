@@ -52,9 +52,20 @@ int binary() {
     int binary[50] = { 0, };
     int position = 0;
     int x;
+    int num;
 
     printf("\n진법을 변환할 수를 입력해주세요.\n");
     printf("입력 : ");
-    scanf(" %d", &x);
+    scanf_s(" %d", &x);
 
+    while (1)
+    {
+        binary[position] = num % 2;
+        num = num / 2;
+
+        position++;
+
+        if (num == 0)
+            break;
+    }
 }
