@@ -28,7 +28,11 @@ int basic() {
     }
     else if (operator == '*') {
         result = num1 * num2;
-        printf("\n%d × %d = %d\n", num1, num2, num1 * num2);
+        printf("\n%d × %d = %d\n", num1, num2, result);
+    }
+    else if (operator == '/') {
+        result = num1 / num2;
+        printf("\n%d ÷ %d = %.2f\n", num1, num2, (double)result);
     }
 
 }
