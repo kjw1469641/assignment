@@ -39,5 +39,9 @@ int basic() {
 }
 
 int square() {
+    int x;
 
+    printf("\n제곱하고 싶은 숫자를 입력해주세요.\n");
+    printf("입력 : ");
+    scanf_s("%d", &x);
 }
