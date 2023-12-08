@@ -11,10 +11,17 @@ int main()
 
 int basic() {
     int num1, num2, result;
-    char operator = 0;
+    char operator;
 
     printf("\n사칙연산을 수행할 연산식을 입력해주세요.\n(+, -, *, /)\n");
     printf("(입력 예시) 102 + 308 [엔터]\n");
     printf("입력 : ");
-    scanf(" %d %c %d", &num1, &operator, &num2);
+    scanf_s(" %d %c %d", &num1, &operator, &num2);
+
+    if (operator == '+') {
+        result = num1 + num2;
+        printf("\n%d + %d = %d\n", num1, num2, result);
+    }
+
+
 }
