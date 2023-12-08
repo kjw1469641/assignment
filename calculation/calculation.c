@@ -26,5 +26,9 @@ int basic() {
         result = num1 - num2;
         printf("\n%d - %d = %d\n", num1, num2, result);
     }
+    else if (operator == '*') {
+        result = num1 * num2;
+        printf("\n%d × %d = %d\n", num1, num2, num1 * num2);
+    }
 
 }
