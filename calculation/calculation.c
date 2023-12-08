@@ -2,18 +2,37 @@
 
 int main()
 {
-    
+
     char x;
 
-    printf("==========계산기============");
+    printf("================계산기================");
 
     printf("\n원하는 기능을 선택하세요.\n");
-    printf("1. 사칙연산\n2. 삼각함수\n3. 거듭제곱\n4. 진법변환\nx. 종료\n\n");
+    printf("1. 사칙연산\n2. 제곱\n3. 2진법변환\n");
 
     printf("선택 : ");
-    scanf(" %c", &x);
+    scanf_s(" %c", &x);
 
+    switch (x) {
+    case '1':
+        basic();
+
+        break;
+    case '2':
+        square();
+
+        break;
+    case '3':
+        binary();
+
+        break;
+    default:
+        printf("\n보기에서 없는 키를 입력하셨습니다.\n");
+        
+        break;
+    }
 }
+
 
 int basic() {
     int num1, num2, result;
@@ -40,6 +59,9 @@ int basic() {
         result = num1 / num2;
         printf("\n%d ÷ %d = %.2f\n", num1, num2, (double)result);
     }
+    else {
+        printf("사칙연산 중 선택해서 입력해주세요.");
+    }
 
 }
 
@@ -50,7 +72,7 @@ int square() {
     printf("입력 : ");
     scanf_s("%d", &x);
 
-    printf("입력한 숫자의 제곱은 %d 입니다.", x);
+    printf("입력한 숫자의 제곱은 %d 입니다.", x*x);
 }
 
 int binary() {
@@ -64,6 +86,8 @@ int binary() {
     scanf_s(" %d", &x);
 
     int num = x;
+
+    printf("%d를 2진수로 표현하면 ", x);
 
     while (1)
     {
@@ -81,5 +105,5 @@ int binary() {
         printf("%d", binary[i]);
     }
 
-    printf("\n%d를 2진수로 표현하면 %d입니다.\n", x, binary);
+    printf("입니다.\n");
 }
