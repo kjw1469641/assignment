@@ -3,10 +3,15 @@
 int main()
 {
     
-    char xy;
+    char x;
 
     printf("==========계산기============");
 
+    printf("\n원하는 기능을 선택하세요.\n");
+    printf("1. 사칙연산\n2. 삼각함수\n3. 거듭제곱\n4. 진법변환\nx. 종료\n\n");
+
+    printf("선택 : ");
+    scanf(" %c", &x);
 
 }
 
